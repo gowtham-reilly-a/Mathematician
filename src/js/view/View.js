@@ -61,11 +61,13 @@ export default class View {
   }
 
   _reset() {
-    this._practice.classList.toggle("hidden");
-    this._newPractice.classList.toggle("hidden");
-    this._nav.classList.toggle("hidden");
+  //   this._practice.classList.toggle("hidden");
+  //   this._newPractice.classList.toggle("hidden");
+  //   this._nav.classList.toggle("hidden");
 
-    if (!this._userAnswerSubmitForm.classList.contains("hidden"))
-      this._userAnswerSubmitForm.classList.toggle("hidden");
-  }
+  //   if (!this._userAnswerSubmitForm.classList.contains("hidden"))
+  //     this._userAnswerSubmitForm.classList.toggle("hidden");
+  //     this._userAnswer.classList
+  // }
+  window.location.reload()
 }
