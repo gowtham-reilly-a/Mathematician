@@ -1,5 +1,5 @@
 {
-  "name": "mathematician",
+  "name": "mathify",
   "version": "1.0.0",
   "description": "Basic Math Challenges",
   "default": "index.js",
