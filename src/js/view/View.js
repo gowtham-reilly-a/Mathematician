@@ -61,6 +61,11 @@ export default class View {
   }
 
   _reset() {
-    window.location.reload();
+    this._practice.classList.toggle("hidden");
+    this._newPractice.classList.toggle("hidden");
+    this._nav.classList.toggle("hidden");
+
+    if (!this._userAnswerSubmitForm.classList.contains("hidden"))
+      this._userAnswerSubmitForm.classList.toggle("hidden");
   }
 }
