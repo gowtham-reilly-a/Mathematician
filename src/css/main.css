@@ -17,6 +17,10 @@
   grid-gap: 10px;
 }
 
+.header {
+  margin-bottom: 10px;
+}
+
 .copyright {
   font-size: 14px;
   text-decoration: none;
@@ -54,16 +58,21 @@ ion-icon {
 
 .new-practice__form form select,
 .new-practice__form form input {
-  border: none;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  border-radius: 5px;
+  width: 40%;
 }
 
 .new-practice__form form select {
   background-color: #fff;
+  cursor: pointer;
 }
 
 .new-practice__form form input {
   text-align: right;
-  width: 50px;
+  width: 20%;
+  padding: 10px;
 }
 
 .new-practice__form form div {
@@ -139,6 +148,10 @@ ion-icon {
 .practice__stat--time-limit {
   grid-column: 2/3;
   grid-row: 2/3;
+}
+
+.practice__progress--timer .practice__progress--value {
+  color: #e74c3c;
 }
 
 .practice__progress {
