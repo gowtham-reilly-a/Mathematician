@@ -4,7 +4,153 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mathematician</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer type="module" src="src/js/controller.js"></script>
+    <title>Mathematician: Basic Math Challenges</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>
+          Mathematician
+          <a class="copyright" href="https://gowthamreilly.com" target="_blank"
+            >by Gowtham Reilly</a
+          >
+        </h2>
+        <span>Basic Math Challenges</span>
+      </div>
+      <div class="nav hidden">
+        <span class="start-new">New</span>
+      </div>
+
+      <div class="new-practice">
+        <div class="new-practice__form">
+          <form class="new-practice__form--el">
+            <div class="new-practice__operator">
+              <label for="new-practice__form--operator"
+                >Choose an operator</label
+              >
+              <select name="operator" id="new-practice__form--operator">
+                <option value="addition">Addition</option>
+                <option value="subtraction">Subtraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+                <option value="random">Random</option>
+                <option value="mixed">Mixed</option>
+              </select>
+            </div>
+            <div class="new-practice__difficulty">
+              <label for="new-practice__form--difficulty"
+                >Choose difficulty level</label
+              >
+              <select name="difficulty" id="new-practice__form--difficulty">
+                <option value="10">Range 10</option>
+                <option value="20">Range 20</option>
+                <option value="50">Range 50</option>
+                <option value="70">Range 70</option>
+                <option value="100">Range 100</option>
+              </select>
+            </div>
+            <div class="new-practice__max-questions">
+              <label for="new-practice__form--max-questions"
+                >Choose total questions</label
+              >
+              <select
+                name="maxQuestions"
+                id="new-practice__form--max-questions"
+              >
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+              </select>
+            </div>
+            <div class="new-practice__time-limit">
+              <label for="new-practice__form--time-limit"
+                >Set time limit in minutes</label
+              >
+              <input
+                type="number"
+                name="timeLimit"
+                id="new-practice__form--time-limit"
+                value="1"
+                min="1"
+              />
+            </div>
+            <div class="new-practice__start">
+              <button class="new-practice__start--btn" type="submit">
+                Start
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="practice hidden">
+        <div class="practice-stat">
+          <div class="practice__stat--operator">
+            <span class="practice__stat--value">Addition</span>
+            <span class="practice__stat--text">Operator</span>
+          </div>
+          <div class="practice__stat--difficulty">
+            <span class="practice__stat--value">Good</span>
+            <span class="practice__stat--text">Range</span>
+          </div>
+          <div class="practice__stat--max-questions">
+            <span class="practice__stat--value">10</span>
+            <span class="practice__stat--text">Questions</span>
+          </div>
+          <div class="practice__stat--time-limit">
+            <span class="practice__stat--value">5</span>
+            <span class="practice__stat--text">Minutes</span>
+          </div>
+        </div>
+
+        <div class="practice__progress">
+          <div class="practice__progress--correct">
+            <span class="practice__progress--value">3</span>
+            <span class="practice__progress--text">Correct</span>
+          </div>
+          <div class="practice__progress--incorrect">
+            <span class="practice__progress--value">1</span>
+            <span class="practice__progress--text">In-correct</span>
+          </div>
+          <div class="practice__progress--unattempted">
+            <span class="practice__progress--value">2</span>
+            <span class="practice__progress--text">Unattempted</span>
+          </div>
+          <div class="practice__progress--timer">
+            <span class="practice__progress--value">01:48</span>
+            <span class="practice__progress--text">Timer</span>
+          </div>
+        </div>
+        <div class="renderArea"></div>
+      </div>
+
+      <form class="practice__question--answer-form hidden">
+        <input
+          type="number"
+          name="practice__question--answer"
+          id="practice__question--answer"
+          step="any"
+        />
+      </form>
+    </div>
+  </body>
 </html>

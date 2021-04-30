@@ -1,0 +1,28 @@
+{
+  "name": "mathematician",
+  "version": "1.0.0",
+  "description": "Basic Math Challenges",
+  "default": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gowthamreilly/Mathematician.git"
+  },
+  "author": "Gowtham Reilly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gowthamreilly/Mathematician/issues"
+  },
+  "homepage": "https://github.com/gowthamreilly/Mathematician#readme",
+  "devDependencies": {
+    "@parcel/transformer-js": "^2.0.0-alpha.3",
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "core-js": "^3.11.1"
+  }
+}
